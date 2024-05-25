@@ -1,17 +1,3 @@
-- name: install and run mysql
-  hosts: mysql
-  become: yes
-  tasks: #install and run mysql
-  - name: insatll mysql
-    ansible.builtin.dnf:
-      name: mysql
-      state: latest
-  - name: start mysql
-    ansible.builtin.service:
-       name: mysql
-       state: started
-       enabled: yes
-
 
 - name: install and run nginx
   hosts: web
@@ -26,5 +12,30 @@
        name: nginx
        state: started
        enabled: yes
+-
+
+
+
+
+
+
+
+
+
+
+ name: install and run mysql
+  hosts: mysql
+  become: yes
+  tasks: #install and run mysql
+  - name: insatll mysql
+    ansible.builtin.dnf:
+      name: mysql
+      state: latest
+  - name: start mysql
+    ansible.builtin.service:
+       name: mysql
+       state: started
+       enabled: yes
+
 
 
