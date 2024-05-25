@@ -17,13 +17,7 @@
 
 
 
-
-
-
-
-
-
- name: install and run mysql
+- name: install and run mysql
   hosts: mysql
   become: yes
   tasks: #install and run mysql
