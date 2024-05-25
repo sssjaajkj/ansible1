@@ -9,9 +9,4 @@
 
   - name: print user info
     ansible.builtin.debug:
-      msg: "Hello ..."
-      msg: "user info :: {{USER}} ..."
-
-  - name: say Hello
-     ansible.builtin.debug:
-      msg: "Hello ..."  
+      msg: "user info :: {{USER}}"
