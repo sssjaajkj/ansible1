@@ -2,8 +2,7 @@
   hosts: localhost
   vars:
     WISHES: "Morning from PLAY varibale" #play varible  
-  vars-files:
-  - vars.yaml  
+ 
   vars_prompt:
   - name: WISHES
     prompt: please enter WISHES
