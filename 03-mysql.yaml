@@ -1,6 +1,6 @@
 
 
-- name: install and run mysql
+- name: installing and run mysql
   hosts: 172.31.31.171  #172.31.23.112
   become: yes #equal to -b in adhoc command ,getting root accesss
   tasks:
