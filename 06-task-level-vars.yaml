@@ -13,7 +13,7 @@
       msg: "Hi, we are learning {{courses}} from trainer {{trainer}} ,Devops  {{Duration}}..."
 
 
- tasks:
+  tasks:
   - name: print information
     ansible.builtin.debug:
       msg: "Hi, we are learning {{courses}} from trainer {{trainer}} ,Devops  {{Duration}}..."
