@@ -1,0 +1,15 @@
+- name: install and run mysql
+  hosts: web
+  become: yes
+  tasks: #install and run mysql
+  - name: insatll mysql
+    ansible.builtin.dnf:
+      name: mysql
+      state: latest
+  - name: start mysql
+    ansible.builtin.service:
+       name: mysql
+       state: started
+       enable: yes
+
+
