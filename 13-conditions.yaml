@@ -7,7 +7,7 @@
     register: USER # ID EXPENSE VALUE IS STORES
     innore_error: true
 
-  - name: say Hello
+  - name: print user info
     ansible.builtin.debug:
       msg: "Hello ..."
       msg: "user info :: {{USER}} ..."
