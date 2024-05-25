@@ -1,7 +1,7 @@
 - name:  variable
   hosts: localhost
   tasks:
-  vars:
+  variables:
     course: "Ansible"
     trainer: "siva"
     Duration: "120hrs"
