@@ -2,12 +2,12 @@
   hosts: localhost
   tasks:
   vars:
-    course: "Ansible"
+    courses: "Ansible"
     trainer: "siva"
     Duration: "120hrs"
   tasks:
   - name: print information
     vars: #task level vars
-      course: "Devops"
+      courses: "Devops"
     ansible.builtin.debug:
-      msg: "Hi, we are learning {{course}} from trainer {{trainer}} ,Devops  {{Duration}}..."
+      msg: "Hi, we are learning {{courses}} from trainer {{trainer}} ,Devops  {{Duration}}..."
