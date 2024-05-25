@@ -1,8 +1,8 @@
 - name: variables
   hosts: localhost
   tasks:
-  vars:
-  Timings: "3.32pm"
   - name:  print variablefrom vars file
+    vars:
+      Timings: "3.32pm IST"
     ansible.builtin.debug:
       msg : 'Hi i am learning {{course}} from {{trainer}} with {{Duration}} also {{Timings}}'
