@@ -6,7 +6,7 @@
     trainer: "siva"
     Duration: "120hrs"
   tasks:
-  - name: print information
+  - name: print overried information
     vars: #task level vars
       courses: "Devops"
     ansible.builtin.debug:
@@ -14,6 +14,6 @@
 
 
   tasks:
-  - name: print information
+  - name: print without overried information
     ansible.builtin.debug:
       msg: "Hi, we are learning {{courses}} from trainer {{trainer}} ,Devops  {{Duration}}..."
