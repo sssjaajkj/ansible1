@@ -2,7 +2,8 @@
   hosts: localhost
   vars:
     WISHES: "Morning from PLAY varibale" #play varible  
- 
+  vars-files:
+  - vars.yaml  
   vars_prompt:
   - name: WISHES
     prompt: please enter WISHES
@@ -13,3 +14,14 @@
       WISHES: "Morning from TASK varibale" #task varible
     ansible.builtin.debug:
       msg:  "Hello , Good {{WISHES}}"
+
+
+
+#========prefernce==========
+      #1ST args
+      #2nd task level
+      #3rd vars-files
+      #4th prompt
+      #5th Play level
+      # 6th invetory
+      #role level
