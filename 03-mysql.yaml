@@ -1,5 +1,5 @@
 - name: install and run mysql
-  hosts: web
+  hosts: mysql
   become: yes
   tasks: #install and run mysql
   - name: insatll mysql
