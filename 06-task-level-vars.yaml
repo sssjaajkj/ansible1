@@ -13,6 +13,6 @@
       msg: "Hi, we are learning {{courses}} from trainer {{trainer}} ,Devops  {{Duration}}..."
 
 
-   - name: print without overried information
+  - name: print without overried information
     ansible.builtin.debug:
       msg: "Hi, we are learning {{courses}} from trainer {{trainer}} ,Devops  {{Duration}}..."
