@@ -71,4 +71,4 @@
       msg: "Before convert : {{ my_list}}"
   - name: Afert convert
     ansible.builtin.debug:
-      msg: "After convert : {{ my_dict | items2dict}}"    
+      msg: "After convert : {{ my_list | items2dict}}"    
